@@ -1,0 +1,68 @@
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.employee-card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+
+.employee-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.employee-details i {
+  color: #ffd700;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.employee-details a {
+  color: #0099ff;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.employee-details a:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 1rem;
+  }
+}
